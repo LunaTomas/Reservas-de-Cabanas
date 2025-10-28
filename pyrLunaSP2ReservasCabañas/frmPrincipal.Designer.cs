@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipal));
             grpTipoDeCabaña = new GroupBox();
             lblDias = new Label();
             lblPersonas = new Label();
@@ -295,6 +296,8 @@
             Controls.Add(grpFormaDePago);
             Controls.Add(grpAdicionales);
             Controls.Add(grpTipoDeCabaña);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "frmPrincipal";
             Text = "Reservas de Cabañas";
             Load += frmPrincipal_Load;
