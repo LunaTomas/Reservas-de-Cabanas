@@ -299,6 +299,7 @@
             FormBorderStyle = FormBorderStyle.FixedDialog;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "frmPrincipal";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Reservas de Cabañas";
             Load += frmPrincipal_Load;
             grpTipoDeCabaña.ResumeLayout(false);
